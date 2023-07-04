@@ -106,6 +106,12 @@ body{
     left: 20px
 
 }
+#navbar .close{
+    display: none;
+}
+#mobile{
+    display: none;
+}
 #hero{
     background-image: url("img/hero4.png");
     height: 90vh;
@@ -518,4 +524,81 @@ footer a:hover{
 footer .copywrite{
     width: 100%;
     text-align: center;
+}
+
+/* Cart Page*/
+
+/* Start Media Query*/
+
+@media (max-width: 899px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 98vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgb(0, 0, 0 , 0.1);
+        padding: 80px 0 0 20px;
+        transition: 0.3s ease;
+        font-size: 5px;
+
+    }
+    #navbar li{
+        padding: 15px;
+    }
+    #navbar li a{
+        font-size: 20px;
+    }
+    #navbar.active{
+        right: 0;
+    }
+    #navbar .cart{
+        display: none;
+    }
+    #header {
+
+        padding: 10px 80px;
+    }
+
+    #mobile{
+        display: flex;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 25px;
+    }
+    #mobile .cart{
+        color: black;
+    }
+    #bar{
+        padding-left: 30px;
+        color: black;
+    }
+    #bar:active{
+        color: #ec544e;
+    }
+    #navbar .close{
+        display: flex;
+        font-size: 35px;
+        position:absolute;
+        top:30px;
+        left: 30px ;
+        color: black;
+    }
+    #navbar .close:active{
+        color:#ec544e;
+    }
+
+    #hero {
+        background-size: cover;
+        background-position: top 25% right 45%;
+    }
+
+    #banner {
+        height: 20vh;
+    }
 }
