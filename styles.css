@@ -602,3 +602,14 @@ footer .copywrite{
         height: 20vh;
     }
 }
+
+@media (max-width:740px) {
+    #hero {
+        background-position: top 25% left 65%;
+    }
+    #banner3 .banner-box {
+        width: 250px;
+        min-width: 48%;
+        height: 15vh;
+    }
+}
